@@ -1,5 +1,11 @@
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 
 /*hlavni stranka*/
 
@@ -8,18 +14,18 @@ body {
   font-size: 18px;
   line-height: 1.5;
   margin: 0;
-	background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 header {
-	background-color: whitesmoke;
-	color: #616e68;
-	font-family: 'Playfair Display', serif;
-	font-weight: bold;
-	font-size: 24px;
-	overflow: auto;
-	padding: 50px 15%;
-	margin: 0 5%;
+  background-color: whitesmoke;
+  color: #616e68;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 24px;
+  overflow: auto;
+  padding: 50px 15%;
+  margin: 0 5%;
 }
 
 .menu li {
@@ -30,16 +36,16 @@ header {
   margin: 0px;
   padding: 0px;
   text-align: right;
-	font-family: 'Playfair Display', serif;
-  background-color: #9eb8ab; 
+  font-family: 'Playfair Display', serif;
+  background-color: #9eb8ab;
 }
 
 .menu a {
   color: #616e68;
   text-decoration: none;
-	padding: 10px 20px;
+  padding: 10px 20px;
   display: inline-block;
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .menu a:hover,
@@ -54,10 +60,10 @@ a {
 }
 
 section {
-	padding: 40px 15%;
+  padding: 40px 15%;
   overflow: auto;
   text-align: justify;
-	background-color: #bdd4c9;
+  background-color: #bdd4c9;
 }
 
 .projekt {
@@ -65,33 +71,32 @@ section {
 }
 
 .projekt img {
-	width: 50%;
-	border-radius: 5px;
+  width: 50%;
+  border-radius: 5px;
 }
- 
+
 .popis-projekt {
   margin: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-	font-family: 'Dancing Script';
+  font-family: 'Dancing Script';
 }
 
 .footer {
-	padding: 50px 15%;
-	background-color: whitesmoke;
+  padding: 50px 15%;
+  background-color: whitesmoke;
   text-align: center;
 }
 
 .planovac {
-  background: url("img/pottery.jpg");
-  background-size:cover;
-  background-attachment:fixed;
+  background: url('img/pottery.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   /*vyresetování odsazení stránky*/
   margin: 0;
 }
-
 
 /*To-do list*/
 
@@ -162,12 +167,12 @@ ul li.checked::before {
   padding: 30px;
   color: white;
   text-align: center;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 /* Clear floats after the header */
 .aktivity:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -199,4 +204,66 @@ input {
 
 .addBtn:hover {
   background-color: #bbb;
+}
+
+/* Denik */
+.body__note {
+  background: url('img/zen.jpg');
+}
+.conteiner__note {
+  display: flex;
+}
+
+.histories__note {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 30%;
+  padding: 5px;
+}
+
+.history__note {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  align-items: start;
+}
+
+#date__note {
+  border: 2px solid black;
+  border-radius: 45%;
+  background-color: lightgreen;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.note {
+  flex-grow: 3;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.nadpis__note {
+  text-align: center;
+}
+
+.zapis_note {
+  padding-left: 30px;
+}
+#zapisek__note {
+  background-image: url('img/book.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#input__date__note,
+#input__nazev__note {
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  width: 250px;
+}
+
+#submit__note {
+  width: 150px;
 }

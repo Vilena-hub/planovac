@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <header class="header">
+      <!--menu-->
+      <ul class="menu">
+        <li><a href="index.html">O projektu</a></li>
+        <li><a href="planovac.html">Plánovač</a></li>
+        <li><a href="denik.html">Denik</a></li>
+        <li><a href="vilena.html">Vilena</a></li>
+      </ul>
+    </header>
+    <section class="body__note"></section>
+    <div class="conteiner__note">
+      <!-- historie příspěvků -->
+      <section class="histories__note">
+        <h4 class="nadpis__note">Historie příspěvků</h4>
+        <section class="history__note">
+          <div id="date__note">datum</div>
+          <div id="name__note"><a href="#">Můj víkendový zážitek </a></div>
+        </section>
+        <section class="history__note">
+          <div id="date__note">datum</div>
+          <div id="name__note"><a href="#">Můj víkendový zážitek </a></div>
+        </section>
+        <section class="history__note">
+          <div id="date__note">datum</div>
+          <div id="name__note"><a href="#">Můj víkendový zážitek </a></div>
+        </section>
+        <section class="history__note">
+          <div id="date__note">datum</div>
+          <div id="name__note"><a href="#">Můj víkendový zážitek </a></div>
+        </section>
+      </section>
+
+      <!-- Deník -->
+      <section class="note">
+        <h4 class="nadpis__note">Deník</h4>
+
+        <input id="input__date__note" type="text" value="datum příspěvku" />
+
+        <input id="input__nazev__note" type="text" value="název příspěvku" />
+
+        <form class="zapis__note" action="">
+          <textarea id="zapisek__note" name="denik" rows="33" cols="100">
+          </textarea>
+        </form>
+        <input type="submit" value="Submit" id="submit__note" />
+      </section>
+    </div>
+  </section>
+  </body>
+</html>
